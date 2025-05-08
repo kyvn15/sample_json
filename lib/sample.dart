@@ -6,8 +6,9 @@ class Sample {
   final List<String>? hobby;
   final List<String>? kerjaan;
   final Github? github;
+  final List<Article>? articles;
 
-  Sample({this.name, this.age, this.hobby, this.kerjaan, this.github});
+  Sample({this.name, this.age, this.hobby, this.kerjaan, this.github, this.articles});
 
   factory Sample.fromJson(Map<String, dynamic> json) {
     return Sample(
@@ -16,12 +17,15 @@ class Sample {
       hobby: List<String>.from(json["hobby"] ?? []),
       kerjaan: List<String>.from(json["kerjaan"] ?? []),
       github: Github.fromJson(json["github"]),
+      articles: List<Article>.from(json["articles"].map(
+        (article) => Article.fromJson(article)
+      ) ?? []),
     );
   }
 
   @override
   String toString() {
-    return 'Sample(name: $name, age: $age, hobby: $hobby, kerjaan: $kerjaan, github: $github)';
+    return 'Sample(name: $name, age: $age, hobby: $hobby, kerjaan: $kerjaan, github: $github, articles: $articles)';
   }
 }
 
@@ -46,5 +50,28 @@ class Github {
   @override
   String toString() {
     return 'Github(username: $username, repositories: $repositories, isGDE: $isGDE)';
+  }
+}
+
+// vidio part 3 //
+
+class Article {
+  final int? id;
+  final String? title;
+  final String? subtitle;
+
+  Article({this.id, this.title, this.subtitle});
+
+  factory Article.fromJson(Map<String, dynamic> json) {
+    return Article (
+      id: json["id"] ?? 0,
+      title: json["title"] ?? '',
+      subtitle: json["subtitle"] ?? '',
+    );
+  }
+
+  @override
+  String toString() {
+    return 'Article (id: $id, title: $title, subtitle: $subtitle)';
   }
 }

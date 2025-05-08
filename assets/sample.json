@@ -16,5 +16,22 @@
     "username": "kayeAnakGanteng",
     "repositories": 2897,
     "isGDE": true
-  }
+  },
+  "articles" : [
+    {
+      "id" : 1,
+      "title" : "Grand Theft Auto",
+      "subtitle" : "this is game"
+    },
+    {
+      "id" : 2,
+      "title" : "Ananta",
+      "subtitle" : "this is novel N film"
+    },
+    {
+      "id" : 3,
+      "title" : "Perahu Kertas",
+      "subtitle" : "this is music"
+    }
+  ]
 }
