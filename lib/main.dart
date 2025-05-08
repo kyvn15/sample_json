@@ -45,12 +45,13 @@ class _MyAppState extends State<MyApp> {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  '${result ?? '-'}',
+                  '${result}',
                   style: const TextStyle(fontSize: 22.0),
                   textAlign: TextAlign.center,
                 ),
               ),
             ],
+            
           ),
         ),
       ),

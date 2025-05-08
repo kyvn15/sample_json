@@ -1,9 +1,20 @@
 {
-    "name" : "Kayevano Atthaya" ,
-    "age" : 18 ,
-    "hobby" : [
-      "main bola voli",
-      "oalhraga",
-      "belajar"
-    ]
+  "name" : "Kayevano Atthaya" ,
+  "age" : 18 ,
+  "hobby" : [
+    "main bola voli",
+    "oalhraga",
+    "belajar"
+  ],
+  "kerjaan": [
+    "pertamina",
+    "tentara",
+    "polisi",
+    "doktor"
+  ],
+  "github": {
+    "username": "kayeAnakGanteng",
+    "repositories": 2897,
+    "isGDE": true
   }
+}
